@@ -8,7 +8,7 @@ export class CatCard {
         this.cat = document.createElement('div')
         const attribs = []
         const nameDiv = document.createElement('div')
-        nameDiv.innerHTML=`<h1>${name}<h1>`
+        nameDiv.innerHTML=`<h1>${name}</h1>`
         attribs.push(nameDiv)
         const list = document.createElement("ul")
         Object.entries(content).forEach(([key, val])=>{
