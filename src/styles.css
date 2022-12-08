@@ -29,10 +29,12 @@ label {
 }
 
 button, input[type="submit"] {
-    width: auto;
+    width: 12rem;
     padding: 9px 15px;
+    margin: 2px;
     background: #cccccc;
     border: 0;
     font-size: 14px;
-    color: #FFFFFF;
+    color: #000000;
+    box-shadow: 2px 3px 2px black;
 }
