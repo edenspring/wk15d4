@@ -42,7 +42,6 @@ will create cards to render our cats. Once we have the data from our server, we'
 the `new CatCard(catdata)` paradigm to create those elements, then append them 
 somewhere to see them. See if you can find any places in the HTML to add them in! 
 
-To get started, head over to `/src/index.js` and take
-a look!
+Once you've got some ideas, head over to `src/index.js` and lets get started!
 
 
