@@ -59,6 +59,7 @@ export class CatForm {
         cancel.innerText = "CANCEL"
         cancel.addEventListener("click", e=>{
             document.querySelector(".cat-form").remove()
+            document.querySelector("#cats-form-button").style.visibility="visible"
         })
         form.append(submit)
         form.append(cancel)
