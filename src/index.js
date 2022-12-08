@@ -6,40 +6,35 @@ window.addEventListener("DOMContentLoaded", () => {
     const removeButton = document.querySelector("#remove-cats-button")
     removeButton.style.visibility = "hidden"
     
-    // //---------------------------- Promise Chaining
-    // fetchButton.addEventListener("click", e => {
-    //     const catsDiv = document.querySelector(".cats-div")
-    //     const catsContainer = document.createElement("div")
-    //     catsContainer.classList.add("cats-container")
-    //     let cats;
-    //     fetch('/cats').then(data => data.json()).then(cats => {
-    //         const allCats = []
-    //         Object.values(cats).forEach(cat => {
-    //             allCats.push(new CatCard(cat))
-    //         })
-    //         catsContainer.append(...allCats)
-    //         catsDiv.append(catsContainer)
-    //         removeButton.style.visibility = "visible"
-    //         fetchButton.style.visibility = "hidden"
-    //     })
-    // })
-
-    //---------------------------- async/await
-    fetchButton.addEventListener("click", async e => {
+    //---------------------------- Promise Chaining
+    fetchButton.addEventListener("click", e => {
         const catsDiv = document.querySelector(".cats-div")
         const catsContainer = document.createElement("div")
         catsContainer.classList.add("cats-container")
-        const data = await fetch('/cats')
-        const cats = await data.json()
-        const allCats = []
-        Object.values(cats).forEach(cat => {
-            allCats.push(new CatCard(cat))
-        })
-        catsContainer.append(...allCats)
-        catsDiv.append(catsContainer)
+        // Fill in fetch data and Logic here using promise chaining!!
+        // We'll want to fetch our cats, convert that JSON information to
+        // usable data, use our class constructor (new CatCard(cat)) to create
+        // elements for our cats, append each one to the cats-container, then,
+        // append that container to the catsDiv
+
+
         removeButton.style.visibility = "visible"
         fetchButton.style.visibility = "hidden"
     })
+
+    // //---------------------------- async/await
+    // fetchButton.addEventListener("click", async e => {
+    //     const catsDiv = document.querySelector(".cats-div")
+    //     const catsContainer = document.createElement("div")
+    //     catsContainer.classList.add("cats-container")
+    //     // Fill in fetch data and Logic here using async/await!!
+    //     // We'll want to fetch our cats, convert that JSON information to
+    //     // usable data, use our class constructor (new CatCard(cat)) to create
+    //     // elements for our cats, append each one to the cats-container, then,
+    //     // append that container to the catsDiv
+    //     removeButton.style.visibility = "visible"
+    //     fetchButton.style.visibility = "hidden"
+    // })
 
     removeButton.addEventListener("click", e => {
         document.querySelector(".cats-container").remove()
