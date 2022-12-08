@@ -1,0 +1,34 @@
+{
+    "1": {
+        "name": "wax",
+        "color": "torty",
+        "furLength": "short",
+        "hasTail": "no",
+        "isGoodKitty": true,
+        "isChonky": false
+    },
+    "2": {
+        "name": "wayne",
+        "color": "black",
+        "furLength": "short",
+        "hasTail": "no",
+        "isGoodKitty": true,
+        "isChonky": true
+    },
+    "3": {
+        "name": "missy",
+        "color": "brown",
+        "furLength": "long",
+        "hasTail": "yes",
+        "isGoodKitty": true,
+        "isChonky": false
+    },
+    "4": {
+        "name": "oj",
+        "color": "orange",
+        "furLength": "short",
+        "hasTail": "yes",
+        "isGoodKitty": false,
+        "isChonky": false
+    }
+}
