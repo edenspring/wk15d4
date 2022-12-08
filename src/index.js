@@ -5,20 +5,25 @@ window.addEventListener("DOMContentLoaded", () => {
     const fetchButton = document.querySelector("#fetch-cats-button")
     const removeButton = document.querySelector("#remove-cats-button")
     removeButton.style.visibility = "hidden"
-    //---------------------------- Promise Chaining
+    
+    // //---------------------------- Promise Chaining
     // fetchButton.addEventListener("click", e => {
     //     const catsDiv = document.querySelector(".cats-div")
+    //     const catsContainer = document.createElement("div")
+    //     catsContainer.classList.add("cats-container")
     //     let cats;
     //     fetch('/cats').then(data => data.json()).then(cats => {
     //         const allCats = []
     //         Object.values(cats).forEach(cat => {
     //             allCats.push(new CatCard(cat))
     //         })
-    //         // catsDiv.append(new CatCard())
-    //         catsDiv.append(...allCats)
+    //         catsContainer.append(...allCats)
+    //         catsDiv.append(catsContainer)
+    //         removeButton.style.visibility = "visible"
+    //         fetchButton.style.visibility = "hidden"
     //     })
     // })
-    
+
     //---------------------------- async/await
     fetchButton.addEventListener("click", async e => {
         const catsDiv = document.querySelector(".cats-div")

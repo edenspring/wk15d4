@@ -25,7 +25,7 @@ else that's free (8000 is a good alternative).
 Once you're settled on a port, you'll run `node app.mjs` in your terminal. 
 
 Afterwards, you can view everything at `http://localhost:5000/` or replace 5000 with
-whatever number you sttled on for a port
+whatever number you settled on for a port
 
 
 ## What does it do?
@@ -36,7 +36,13 @@ route.
 
 ## What will we use it for?
 We'll be exploring promises (both promise chaining and async/await syntax) as well as
-AJAX by hitting this server. To get started, head over to `/src/index.js` and take
+AJAX by hitting this server. Take a look at the `cat-card.js` file. In here, we've got
+some JavaScript classes that will create new HTML elements for us. The `CatCard` class
+will create cards to render our cats. Once we have the data from our server, we'll use
+the `new CatCard(catdata)` paradigm to create those elements, then append them 
+somewhere to see them. See if you can find any places in the HTML to add them in! 
+
+To get started, head over to `/src/index.js` and take
 a look!
 
 
